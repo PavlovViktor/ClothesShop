@@ -1,0 +1,35 @@
+﻿<Window x:Class="Command_3_Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Command_3_Project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Frame Grid.Row="1" x:Name="MainFrame" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered"></Frame>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0" Opacity="1">
+                <GradientStop Color="#FF00AD91" Offset="1"/>
+                <GradientStop Color="#FF67F4FF" Offset="0.433"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Rectangle Fill="Black" VerticalAlignment="Top" Height="50" >
+        </Rectangle>
+        
+        <Image Source="/Images/WbModnik-com-13-01-2026.png" Height="50" Width="500" HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
+        <Button  x:Name="BackBtn" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Right" Background="Black">
+            <Image Source="/Images/Back_img.png"/>
+        </Button>
+        <Button x:Name="HomeBtn" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Black">
+            <Image Source="/Images/home.png" Height="50" Width="50" HorizontalAlignment="Left" VerticalAlignment="Top"  ></Image>
+        </Button>
+        
+
+    </Grid>
+</Window>
